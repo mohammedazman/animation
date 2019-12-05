@@ -1,0 +1,133 @@
+
+
+ html,  body {
+
+	/* The universe takes up all available space */
+
+	width: 100%;
+
+	height: 100%;
+
+
+	/* The universe is black */
+
+	background:radial-gradient(white,black);
+}
+.sun {
+
+	position: absolute;
+	/* Positions the top-left corner of the image to be */
+   	/* in the middle of the box */
+    top: 50%;
+   	left: 50%;
+
+	height: 150px;
+	width: 150px;
+	margin-top: -100px;
+	margin-left: -100px;
+	border-color: yellow;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 100%;
+
+
+	box-shadow: 0px 0px 81px yellow;
+}
+.earth{
+	/*style your earth*/
+	position: absolute;
+	top: 15%;
+	left: 15%;
+
+	height: 50px;
+	width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+
+	border-color: none;
+	border-width: 0px;
+	border-style: none;
+	border-radius: 100%;
+}
+
+ .moon{
+     /*style your earth*/
+     position: absolute;
+     top: 15%;
+     left: 15%;
+
+     height: 50px;
+     width: 50px;
+     margin:-10px;
+
+
+     border-color: none;
+     border-width: 0px;
+     border-style: none;
+     border-radius: 100%;
+ }
+
+.earth-orbit{
+	/*For <div class id'earth-orbit>'*/
+	position:relative;
+    top: 50%;
+    left: 50%;
+
+    width: 500px;
+    height: 500px;
+    margin-top: -350px;
+    margin-left: -250px;
+    border-width: 2px;
+    border-style: dotted;
+    border-color:red; /*change the color to see the orbit*/
+    border-radius: 100%;
+
+
+	/* ... your other orbit styles ... */
+  	-webkit-animation: spin-right 7s linear infinite;
+	-moz-animation: spin-right 7s linear infinite;
+	-ms-animation: spin-right 7s linear infinite;
+    -o-animation: spin-right 7s linear infinite;
+    animation: spin-right 7s linear infinite;
+}
+ .earth-orbit1 {
+     /*For <div class id'earth-orbit>'*/
+
+     top: 10%;
+     left: 10%;
+     width: 150px;
+     height: 150px;
+     margin-top: -10px;
+     margin-left: -10px;
+     border-width: 2px;
+     border-style: dotted;
+     border-color: red; /*change the color to see the orbit*/
+     border-radius: 100%;
+
+     /* ... your other orbit styles ... */
+     -webkit-animation: spin-right 5s linear infinite;
+     -moz-animation: spin-right 5s linear infinite;
+     -ms-animation: spin-right 5s linear infinite;
+     -o-animation: spin-right 5s linear infinite;
+     animation: spin-right 5s linear infinite;
+ }
+
+/*custom animation code*/
+@-webkit-keyframes spin-right{
+  100% {
+    -webkit-transform: rotate(300deg);
+       -moz-transform: rotate(300deg);
+        -ms-transform: rotate(300deg);
+         -o-transform: rotate(300deg);
+            transform: rotate(300deg);
+  }
+}
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(300deg);
+       -moz-transform: rotate(300deg);
+        -ms-transform: rotate(300deg);
+         -o-transform: rotate(300deg);
+            transform: rotate(300deg);
+  }
+}
